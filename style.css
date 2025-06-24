@@ -1,0 +1,337 @@
+/* Global Styles */
+@import url('https://fonts.cdnfonts.com/css/samsung-sans-4');
+@import url('https://fonts.cdnfonts.com/css/fathers');
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #1b476b 0%, #847224 100%);
+    min-height: 100vh;
+    margin: auto;
+    padding: 16px 30px;
+    color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Product Sans', sans-serif;
+}
+
+/* Container for the form */
+form {
+    background: rgba(255 255 255 / 0.08);
+    border-radius: 26px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255 255 255 / 0.15);
+    margin: 90 auto; /* Increased vertical margin */
+    padding: 20px 40px; /* Increased padding */
+    width: 700px; 
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Samsung Sans', sans-serif;
+    margin-bottom: 24px;
+    color: #6db7d5;
+    text-shadow: 0 0 8px #056396;
+}
+
+/* Fieldset and legend styling */
+fieldset {
+    border: 1px solid rgba(255 255 255 / 0.25);
+    padding: 30px 40px 40px; /* More padding on all sides */
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.034);
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0 15px;
+    color: #b3d783;
+    text-shadow: 0 0 6px #756824;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+
+td {
+    vertical-align: middle;
+    padding: 0 8px;
+}
+
+/* Label styling */
+label {
+    display: inline-block;
+    font-weight: 600;
+    color: #bbf7d0;
+    user-select: none;
+}
+
+/* Inputs and selects styling */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(255 255 255 / 0.3);
+    background: rgba(15 23 42 / 0.6);
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.3);
+    color: #bbf7d0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    outline-offset: 2px;
+    
+}
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder {
+    color: #86efac;
+    opacity: 0.8;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #34d399;
+    box-shadow: 0 0 6px #34d399;
+    background: rgba(15 23 42 / 0.85);
+    color: #d1fae5;
+}
+
+/* File input */
+input[type="file"] {
+    color: #bbf7d0;
+}
+
+input+p{
+    position: fixed;
+    display: none;
+}
+input:hover+p{
+    display: inline;
+    font-family: monospace;
+    color:rgb(0, 0, 0);
+    font-size:15px;
+    background-color: #0e6b90;
+}
+
+/* Reset button style */
+button[type="reset"] {
+    background: #06b6d4;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: #ecfeff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    border: #d40685;
+}
+
+button[type="reset"]:hover {
+    background: #0e7690;
+}
+
+/* Submit button */
+input[type="submit"] {
+    display: block;
+    background: linear-gradient(135deg, #34d399, #059669);
+    border: none;
+    padding: 14px 32px;
+    border-radius: 16px;
+    color: #f0fdfa;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.15rem;
+    box-shadow: 0 8px 24px rgb(19 78 57 / 0.7);
+    transition: background 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #059669, #065f46);
+}
+
+/* Radio inputs styling */
+input[type="radio"] {
+    accent-color: #34d399;
+    margin-right: 6px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+/* Range input styling */
+input[type="range"] {
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    margin-top: 12px;
+}
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    cursor: pointer;
+    background: #22c55e;
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 0.25);
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #4ade80;
+    cursor: pointer;
+    margin-top: -8px;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 8px #4ade80;
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #22c55e;
+    box-shadow: 0 0 12px #22c55e;
+}
+input[type="email"] ~ img{
+    display: none;
+}
+
+input[type="email"]:focus:valid ~ img#correct{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="email"]:focus:invalid ~ img#wrong{
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+
+/* Table spacing for radio groups */
+td > input[type="radio"] + label {
+    margin-right: 16px;
+    cursor: pointer;
+    user-select: none;
+    color: #bbf7d0;
+    font-weight: 600;
+}
+
+/* Select styling with arrow */
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg fill='none' stroke='%23bbf7d0' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem 1.25rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    height: 45px; 
+}
+/* Textarea */
+textarea {
+    font-family: 'Inter', sans-serif;
+    resize: none;
+}
+textarea:focus::-webkit-slider-thumb {
+    background: #22c55e;
+    box-shadow: 0 0 12px #22c55e;}
+
+/* General Input Styling */
+input {
+    border: 3px solid #86efac; /* Green border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 12px; /* Internal padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Styling Placeholders */
+input::placeholder {
+    color: #a3e635; /* Light green color for placeholder */
+    opacity: 0.75; /* Slightly transparent */
+}
+
+/* Focus State for Inputs */
+input:focus {
+    border-color: #34d399; /* Bright green on focus */
+    background: rgba(10, 20, 30, 0.85); /* Darker background when focused */
+    outline: none; /* No outline */
+}
+
+/* Add a box shadow on focus */
+input:focus {
+    box-shadow: 0 0 5px rgba(52, 211, 153, 1); /* Box shadow on focus */
+}
+
+/* Combine styles for required and optional fields */
+input[required] {
+    border: 3px solid rgb(166, 165, 104); /* Specific style for required fields */
+}
+
+input[optional] {
+    border-style: dashed; /* Dashed border for optional */
+    border: 3px solid rgb(83, 0, 128); /* Different color for optional */
+}
+
+/* Modified Textarea Styling */
+textarea {
+    border: 10px opacity rgb(166, 165, 104); /* Match input styling */
+    resize: none; /* Prevent resizing */
+    padding: 12px; /* Internal padding */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-color: #34d399; 
+    box-shadow: 0 0 5px rgba(52, 211, 153, 1);
+}
+input[type="radio"]:checked{
+    height: 20px;
+    width: 20px;
+}
+
+input[type="radio"]:checked + label{
+    font-size: 20px;
+    background-color: rgb(122, 188, 255);
+    color: rgb(165, 42, 130);
+}
+
+.label-gender{
+    color: deeppink;
+}
+
+.label-mode{
+    color: rgb(139, 0, 137);
+}
+select {
+    border: 3px solid rgb(166, 165, 104); /* Change the border color as needed */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 5px; /* Optional: adds padding inside the dropdown */
+    /* Optional: change background color */
+    font-size: 16px; /* Optional: adjust font size */
+}
+/* Style on focus */
+select:focus {
+    box-shadow: 0 0 5px rgba(52, 211, 153, 1);
+}
