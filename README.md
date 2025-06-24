@@ -51,7 +51,7 @@ This is a beautifully styled and responsive **Course Registration Form** built u
 📁 Project Structure
 
 course-registration-form/
-│
+
 ├── index.html          # Main form page
 ├── style.css           # Custom CSS styling
 ├── screenshot.png      # Screenshot of the form UI
@@ -60,6 +60,5 @@ course-registration-form/
 🙋‍♀️ Author
 Priya Dharshini
 
-📧 [Your Email or Contact Info]
-
-🌐 []
+- 📧 **Email**: keerthi29052004@gmail.com  
+- 💼 **LinkedIn**: [Priya Dharshini S](https://www.linkedin.com/in/priya-dharshini-s29/)
