@@ -53,8 +53,11 @@ This is a beautifully styled and responsive **Course Registration Form** built u
 course-registration-form/
 
 ├── index.html          # Main form page
+
 ├── style.css           # Custom CSS styling
+
 ├── screenshot.png      # Screenshot of the form UI
+
 └── README.md           # Project overview
 
 🙋‍♀️ Author
